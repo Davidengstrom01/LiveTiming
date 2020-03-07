@@ -1,0 +1,272 @@
+/*
+======================================
+Global rules
+======================================
+*/
+header {
+    padding: 0px;
+}
+body {
+    margin: 0px;
+    font-family: sans-serif;
+    font-size: 100%;
+    background-color: skyblue;
+}
+	.footer {
+    text-align: center;
+    margin: 0;
+    border-top: 1px solid black;
+    line-height: 1.8em;
+  }
+/*
+======================================
+Reusables
+======================================
+*/
+
+/*
+======================================
+Startpage rules
+======================================
+*/
+
+.centercontent {
+   margin: auto;
+	 height: auto;
+	 max-width: 60%;
+	 background-color:skyblue;
+}
+
+.centercontent h2 {
+	text-align: left;
+	padding-left: 10px;
+  padding-top: 0px;
+}
+.centercontent p {
+	text-align: left;
+  padding-left: 10px;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.7);
+}
+
+/*
+======================================
+Sök tävling rules
+======================================
+*/
+.infocontent {
+  width: 100%;
+  top: 0px;
+  background-color: white;
+}
+/*CSS för sökbar*/
+#myInput {
+  background-image: url("./images/searchicon.png"); /* Add a search icon to input */
+  background-position: 10px 12px; /* Position the search icon */
+  background-repeat: no-repeat; /* Do not repeat the icon image */
+  max-width: 100%; /* Full-width */
+  font-size: 16px; /* Increase font-size */
+  padding: 12px 20px 12px 40px; /* Add some padding */
+  border: 1px solid #ddd; /* Add a grey border */
+  margin-bottom: 12px; /* Add some space below the input */
+}
+/*CSS för tabellen*/
+#table th {
+	border-bottom: 1px solid #C1DAD7;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	text-align: left;
+	padding: 5px;
+	font: bold 14px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+	border-left: none;
+}
+
+#table td {
+	border-right: 1px solid #C1DAD7;
+	border-bottom: 1px solid #C1DAD7;
+	padding: 6px 10px;
+}
+#table tr {
+	background: #FFF;
+	color: #000000;
+}
+#table {
+  border-collapse: collapse;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+#table tr.alt {
+	background: #F2E3C6;
+	color: #000000;
+}/*
+#table th.nobg {
+	border-top: 0;
+	border-left: 0;
+	border-right: 1px solid #C1DAD7;
+	background: none;
+}
+#table tr.altover {
+	color: #000000;
+	cursor: pointer;
+	background-color: #F2E3C6;
+}
+#table tr.over {
+	color: #000000;
+	border: 2px solid #000000;
+	cursor: pointer;
+}
+#table tr.over {
+	border: 2px solid #000000;
+	cursor: pointer;
+}
+#table .hover {
+	color: #FFF;
+	background: #ADC3CE;
+}
+#table th.spec {
+	font-family: bold 10px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+	border-top-width: 0;
+	border-right-width: 1px;
+	border-top-style: none;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-right-color: #C1DAD7;
+	border-bottom-width: 1px;
+	border-bottom-color: #C6DBD6;
+		
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: #C1DAD7;
+	width: 4em;
+	white-space: nowrap;
+}
+#table td.spec {
+	font-family: bold 11px;
+	border-top-width: 0;
+	border-right-width: 1px;
+	border-top-style: none;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-right-color: #C1DAD7;
+	border-bottom-width: 1px;
+	border-bottom-color: #C6DBD6;
+		
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: #C1DAD7;
+
+}
+#table th.specalt {
+	font-family: bold 10px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+	border-top-width: 0;
+	border-right-width: 1px;
+	border-top-style: none;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-right-color: #C1DAD7;
+	border-bottom-width: 1px;
+	border-bottom-color: #C6DBD6;
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: #C1DAD7;
+	width: 4em;
+}
+#table td.specalt {
+	font-family: bold 11px;
+	border-top-width: 0;
+	border-right-width: 1px;
+	border-top-style: none;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-right-color: #C1DAD7;
+	border-bottom-width: 1px;
+	border-bottom-color: #C6DBD6;
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: #C1DAD7;
+	background: #F5FAFA;
+	background-color: #F2E3C6;
+}
+#table td.sub {
+	border-top-width: 0;
+	border-right-width: 1px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: solid;
+	border-right-color: #C1DAD7;
+	border-bottom-width: 1px;
+	border-bottom-color: #C6DBD6;
+		
+	border-left-width: 1px;
+	border-left-style: none;
+	border-left-color: #C1DAD7;
+	white-space: nowrap;
+}
+#table td.subheader {
+	border-bottom: 1px solid #C1DAD7;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	text-align: right;
+	padding: 5px;
+	font: bold 11px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+	border-left: none;
+}*/
+
+
+/*
+======================================
+Menu rules
+======================================
+*/
+/*BarMenu*/
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+	
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 16px 16px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: #e6872a;
+}
+/*Välj menu*/
+.top_info {
+	float: right;
+  background:rgb(238, 238, 238, 0.85);
+  position: relative;
+  margin-top: 12.5px;
+  margin-bottom: 12.5px;
+  right: 5px;
+	height: 110px;
+}
+.top_info_right {
+	position: relative;
+	margin: 5px;
+	top: 5px;
+}
+.browse_category {
+	font-size: 0.9em;
+	color: #FFF;
+	background: inherit;
+}
+.browse_subcategory {
+	width: 8em;
+	color: #FFF;
+	float: left;
+	background: inherit;
+}
