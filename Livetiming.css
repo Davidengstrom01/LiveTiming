@@ -1,0 +1,188 @@
+/*
+======================================
+Global rules
+======================================
+*/
+* {
+	box-sizing: border-box;
+}
+header {
+    padding: 0px;
+}
+body {
+    margin: 0px;
+    font-family: sans-serif;
+    font-size: 100%;
+    background-color: skyblue;
+}
+	.footer {
+    text-align: center;
+    margin: 0;
+    border-top: 1px solid black;
+    line-height: 1.8em;
+  }
+
+  @media screen and (max-width: 800px) {
+	.navbar a:not(:first-child) {display: none;}
+	.navbar a.icon {
+	  float: right;
+	  display: block;
+	}
+  }
+
+  @media only screen and (max-width:800px) {
+	/* For mobile phones: */
+	.navbar.responsive {position: relative;}
+	.navbar.responsive .icon {
+	  position: absolute;
+	  right: 0;
+	  top: 0;
+	}
+	.navbar.responsive a {
+	  float: none;
+	  display: block;
+	  text-align: left;
+	}
+  }
+/*
+======================================
+Menu rules
+======================================
+*/
+.logo {
+	padding: 0;
+}
+/*BarMenu*/
+.navbar {
+	margin-top: 0;
+  overflow: hidden;
+  background-color: #333;
+	
+}
+.navbar a {
+  float: left;
+  display: block;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 16px 16px;
+  text-decoration: none;
+}
+.navbar a:hover {
+  background-color: #e6872a;
+}
+.navbar .icon {
+	display: none;
+}
+/* Add an active class to highlight the current page */
+.navbar a.active {
+	background-color: #e6872a;
+	color: white;
+  }
+/*Välj menu*/
+.top_info {
+	float: right;
+  	background:rgb(238, 238, 238, 0.85);
+  	position: relative;
+  	margin-top: 12.5px;
+  	margin-bottom: 12.5px;
+	right: 5px;
+    height: 110px;
+}
+.top_info_right {
+	position: relative;
+	margin: 5px;
+	top: 5px;
+	right: 5px;
+	left: 5px;
+}
+
+
+/*
+======================================
+Reusables
+======================================
+*/
+
+/*
+======================================
+Startpage rules
+======================================
+*/
+
+.centercontent {
+   margin: auto;
+	 height: auto;
+	 max-width: 60%;
+	 background-color:skyblue;
+}
+
+.centercontent h2 {
+	text-align: left;
+	padding-left: 10px;
+  padding-top: 0px;
+}
+.centercontent p {
+	text-align: left;
+  padding-left: 10px;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.7);
+}
+
+/*
+======================================
+Sök tävling rules
+======================================
+*/
+.infocontent {
+  width: 100%;
+  top: 0px;
+  background-color: white;
+}
+/*CSS för sökbar*/
+#myInput {
+  background-image: src= "./images/searchicon.png"; /* Add a search icon to input */
+  background-position: 10px 12px; /* Position the search icon */
+  background-repeat: no-repeat; /* Do not repeat the icon image */
+  max-width: 100%; /* Full-width */
+  font-size: 16px; /* Increase font-size */
+  padding: 12px 20px 12px 40px; /* Add some padding */
+  border: 1px solid #ddd; /* Add a grey border */
+  margin-bottom: 12px; /* Add some space below the input */
+}
+/*CSS för tabellen*/
+#table th {
+	border-bottom: 1px solid #C1DAD7;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	text-align: left;
+	padding: 5px;
+	font: bold 14px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+	border-left: none;
+}
+
+#table td {
+	border-right: 1px solid #C1DAD7;
+	border-bottom: 1px solid #C1DAD7;
+	padding: 6px 10px;
+}
+#table tr {
+	background: #FFF;
+	color: #000000;
+}
+#table {
+  border-collapse: collapse;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+#table tr.alt {
+	background: #F2E3C6;
+	color: #000000;
+}
