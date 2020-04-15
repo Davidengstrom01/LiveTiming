@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livetiming</title>
+  <link rel="stylesheet" href="css/Livetiming.css">
+  <script src="search.js"></script>
+
+</head>
+
+<body>	
+  <header>
+      <!-- Logotyp -->
+    <a href="index.html"><img class="logo" src="./images/livetiming_banner.finalpng.png"/></a>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="index.html">Start</a>
+        <a href="SokTavling.html">Sök Tävling</a>
+        <a href="Program1.html">Program</a> 
+        <a href="Filarkiv.html">Filarkiv</a>
+        <a href="Live.html">Live</a>	
+     </div>
+  </header>
+  <div class = "row">
+      <!-- Tävlings menu -->
+      <div class = "column left">
+        <div class = "competionmenu">
+         <h2>Välj tävling:</h2>
+          <select class="combobox" id="menu1" name="menu1" onchange="change_comp(this)">
+           <option value="5209">Bäckers Cup 2020</option>
+           <option value="4832">Borås Speedo Meet 2020</option>
+           <option value="5231">Cetus GP pitkät nuoret</option>
+           <option value="4704">Dina Försäkringar Race</option>
+           <option value="5409">Espoonlahden Uinnit 2020</option>
+           <option value="5163">FaluSkinsGames 2020</option>
+           <option value="5367">Finn & Fiffi Arena Cup 2020</option>
+           <option value="5316">FynLangbane 2020</option>
+           <option value="5348">Fynske Børnemesterskaber</option>
+           <option value="4885">ICA Supermarket Cup 2020</option>
+           <option value="5384">Kevätkisat</option>
+           <option value="5346">Länstrofén 2020</option>
+           <option value="5055">Lunds öppna knattemästerskap 2020 - LÖKEN </option>
+           <option value="5376">Njurundasim 2020</option>
+           <option value="5245">Olsbergs Mitt i Prick 2020</option>
+           <option value="4983">Oulun Uinnit</option>
+           <option value="5357">Øst Junior/Senior Langbane 2020</option>
+           <option value="5295">Poängsim 3, 2019-2020</option>
+           <option value="5335">Region Syd Turnering 3</option>
+           <option value="5334">S 71-Cup</option>
+           <option value="4997">Sandaredssimmet 2020</option>
+           <option value="5292">Skomakardoppet 2020</option>
+           <option value="5383">SuSvim Open Feb. 2020</option>
+           <option value="5349">Umestänket 2020</option>
+           <option value="5071">Vantaa Junior Meet</option>
+           <option value="4775">Vest Senior/Junior Langbane</option>
+           <option selected="selected" value="4871">SM/JSM (25m) 2019</option>
+         </select>
+       </div>
+      </div>
+
+      <div class = "column middle"> 
+        <div class="center">
+          <h1>Program för en Exempel tävling</h1>
+          <p>Nedan visas startlistor och heatlistor uppdelade per tävlingspass.</p>
+            <div class="subbar">
+                <ul>
+              <li class="browse_subcategory">Valt tävlingspass:</li>
+             <li><a href="Program1.html">Pass 1 </a></li>
+             <li class="active"><a href="Program2.html">Pass 2 </a></li>
+             <li><a href="Program3.html">Pass 3 </a></li>          
+                </ul>
+              </div>
+              <h3>Pass 2, Lördag insim 14:30, start 16:00</h3>
+						<table id="table" cellspacing="0">
+							<tbody>
+								<tr>
+									<th scope="col" >#</th>
+									<th scope="col">Gren</th>
+			 						<th scope="col">Sponsor</th>
+									<th scope="col">Startlista</th>
+									<th scope="col">Heatlista</th>
+							</tr>			<tr class="alt">							
+									<td class="specalt">10</td>
+									<td class="alt">50m Frisim Damer Försök</td>
+									<td class="alt">Speedo</td>
+								<td class="alt"><a href='program.php?cid=4832&amp;session=2&amp;type=STS&amp;event=10'>Startlista</a></td>
+							<td class="alt"><a href='program.php?cid=4832&amp;session=2&amp;type=HL&amp;event=10&amp;tpid=12'>Heatlista</a></td>
+							</tr>
+							<tr class="">							
+									<td class="spec">11</td>
+									<td class="">50m Frisim Herrar Försök</td>
+									<td class="">Speedo</td>
+								<td class=""><a href='program.php?cid=4832&amp;session=2&amp;type=STS&amp;event=11'>Startlista</a></td>
+							<td class=""><a href='program.php?cid=4832&amp;session=2&amp;type=HL&amp;event=11&amp;tpid=14'>Heatlista</a></td>
+							</tr>
+							<tr class="alt">							
+									<td class="specalt">12</td>
+									<td class="alt">200m Fjärilsim Damer Final</td>
+									<td class="alt">Freker Sport</td>
+								<td class="alt"><a href='program.php?cid=4832&amp;session=2&amp;type=STS&amp;event=12'>Startlista</a></td>
+							<td class="alt"><a href='program.php?cid=4832&amp;session=2&amp;type=HL&amp;event=12&amp;tpid=16'>Heatlista</a></td>
+							</tr>
+							<tr class="">							
+									<td class="spec">13</td>
+									<td class="">200m Fjärilsim Herrar Final</td>
+									<td class="">Intersport</td>
+								<td class=""><a href='program.php?cid=4832&amp;session=2&amp;type=STS&amp;event=13'>Startlista</a></td>
+							<td class=""><a href='program.php?cid=4832&amp;session=2&amp;type=HL&amp;event=13&amp;tpid=17'>Heatlista</a></td>
+							</tr>
+							<tr class="alt">							
+									<td class="specalt">14</td>
+									<td class="alt">100m Bröstsim Damer Final</td>
+									<td class="alt">Nokas Låsteknik AB</td>
+								<td class="alt"><a href='program.php?cid=4832&amp;session=2&amp;type=STS&amp;event=14'>Startlista</a></td>
+							<td class="alt"><a href='program.php?cid=4832&amp;session=2&amp;type=HL&amp;event=14&amp;tpid=18'>Heatlista</a></td>
+							</tr>
+							<tr class="">							
+									<td class="spec">15</td>
+									<td class="">100m Bröstsim Herrar Final</td>
+									<td class="">Fristads Express</td>
+								<td class=""><a href='program.php?cid=4832&amp;session=2&amp;type=STS&amp;event=15'>Startlista</a></td>
+							<td class=""><a href='program.php?cid=4832&amp;session=2&amp;type=HL&amp;event=15&amp;tpid=19'>Heatlista</a></td>
+							</tr>
+							<tr class="alt">							
+									<td class="specalt">0</td>
+									<td class="alt">Prisutdelning gren 12-15</td>
+									<td class="alt"></td>
+								<td class="alt">&nbsp;</td>
+							<td class="alt">&nbsp;</td>
+							</tr>
+							<tr class="">							
+									<td class="spec">16</td>
+									<td class="">200m Medley Damer Final</td>
+									<td class="">Viskadalens Åkeri AB</td>
+								<td class=""><a href='program.php?cid=4832&amp;session=2&amp;type=STS&amp;event=16'>Startlista</a></td>
+							<td class=""><a href='program.php?cid=4832&amp;session=2&amp;type=HL&amp;event=16&amp;tpid=20'>Heatlista</a></td>
+							</tr>
+							<tr class="alt">							
+									<td class="specalt">17</td>
+									<td class="alt">4x100m Frisim Herrar Final</td>
+									<td class="alt">SK Elfsborg</td>
+								<td class="alt"><a href='program.php?cid=4832&amp;session=2&amp;type=STS&amp;event=17'>Startlista</a></td>
+							<td class="alt"><a href='program.php?cid=4832&amp;session=2&amp;type=HL&amp;event=17&amp;tpid=21'>Heatlista</a></td>
+							</tr>
+							<tr class="">							
+									<td class="spec">18</td>
+									<td class="">800m Frisim Damer Final</td>
+									<td class="">Borås Simarena</td>
+								<td class=""><a href='program.php?cid=4832&amp;session=2&amp;type=STS&amp;event=18'>Startlista</a></td>
+							<td class=""><a href='program.php?cid=4832&amp;session=2&amp;type=HL&amp;event=18&amp;tpid=22'>Heatlista</a></td>
+							</tr>
+							<tr class="alt">							
+									<td class="specalt">10</td>
+									<td class="alt">50m Frisim Damer Final</td>
+									<td class="alt">Speedo</td>
+								<td class="alt">&nbsp;</td>
+							<td class="alt"><a href='program.php?cid=4832&amp;session=2&amp;type=HL&amp;event=10&amp;tpid=13'>Heatlista</a></td>
+							</tr>
+							<tr class="">							
+									<td class="spec">11</td>
+									<td class="">50m Frisim Herrar Final</td>
+									<td class="">Speedo</td>
+								<td class="">&nbsp;</td>
+							<td class=""><a href='program.php?cid=4832&amp;session=2&amp;type=HL&amp;event=11&amp;tpid=15'>Heatlista</a></td>
+							</tr>
+							<tr class="alt">							
+									<td class="specalt">0</td>
+									<td class="alt">Prisutdelning gren 10-11 samt 16-18</td>
+									<td class="alt"></td>
+								<td class="alt">&nbsp;</td>
+							<td class="alt">&nbsp;</td>
+							</tr>
+				</tbody>
+						</table>				<br />
+		  </div>
+  </div>
+      <div class="colum right"></div>
+    </div>  
+    
+  <footer>
+    <p><a href="http://www.livetiming.se/extern.php?type=1&lang=1">RSS Feed</a> |
+       <a href="https://support.iccmediasport.com/new-ticket">Kontakt </a>|
+       <a href="https://www.livetiming.se/includes/Integritetspolicy ICCMS.pdf">Integritetspolicy</a><br />
+      &copy; Copyright 2013 IC Control Media & Sport</p>
+  </footer>
+</body>
+</html>

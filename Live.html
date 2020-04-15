@@ -2,62 +2,72 @@
 <html lang="sv">
 <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Livetiming</title>
   <link rel="stylesheet" href="css/Livetiming.css">
+  <script src="search.js"></script>
+
 </head>
 
-<body class="startpage">	
-    <header>
-   <a href="index.html"><img class="logo" src="./images/livetiming_banner.finalpng.png"/></a>	
-   <div class="top_info" style="width:auto;">
-    <div class="top_info_right" style="width:auto;">
-      <p><b>2020-02-25</b>&nbsp;&nbsp;&nbsp;09:28:08						<br /><b>Välj tävling:</b><br />
-        <select class="combobox" id="menu1" name="menu1" onchange="change_comp(this)">
-        <option value="5209">Bäckers Cup 2020</option>
-          <option value="4832">Borås Speedo Meet 2020</option>
-          <option value="5231">Cetus GP pitkät nuoret</option>
-          <option value="4704">Dina Försäkringar Race</option>
-          <option value="5409">Espoonlahden Uinnit 2020</option>
-          <option value="5163">FaluSkinsGames 2020</option>
-          <option value="5367">Finn & Fiffi Arena Cup 2020</option>
-          <option value="5316">FynLangbane 2020</option>
-          <option value="5348">Fynske Børnemesterskaber</option>
-          <option value="4885">ICA Supermarket Cup 2020</option>
-          <option value="5384">Kevätkisat</option>
-          <option value="5346">Länstrofén 2020</option>
-          <option value="5055">Lunds öppna knattemästerskap 2020 - LÖKEN </option>
-          <option value="5376">Njurundasim 2020</option>
-          <option value="5245">Olsbergs Mitt i Prick 2020</option>
-          <option value="4983">Oulun Uinnit</option>
-          <option value="5054">Öppna Skånska Mästerskapen för Masterssimmare 2020</option>
-          <option value="5357">Øst Junior/Senior Langbane 2020</option>
-          <option value="5295">Poängsim 3, 2019-2020</option>
-          <option value="5335">Region Syd Turnering 3</option>
-          <option value="5334">S 71-Cup</option>
-          <option value="4997">Sandaredssimmet 2020</option>
-          <option value="5292">Skomakardoppet 2020</option>
-          <option value="5383">SuSvim Open Feb. 2020</option>
-          <option value="5349">Umestänket 2020</option>
-          <option value="5071">Vantaa Junior Meet</option>
-          <option value="4775">Vest Senior/Junior Langbane</option>
-          <option selected="selected" value="4871">SM/JSM (25m) 2019</option>
-        </select>
-      </p>
-    </div>
-   </div>
-    </header>
-   <div class="navbar">
-	   <a href="index.html">Start</a>
-     <a href="SokTavling.html">Sök Tävling</a>
-     <a href="Program.html">Program</a> 
-	   <a href="Filarkiv.html">Filarkiv</a>
-	   <a href="Live.html">Live</a>	
-  </div>
-  
-  <div class="footer">
-    <p><a href="http://www.livetiming.se/extern.php?type=1&lang=1">RSS Feed</a> | <a href="https://support.iccmediasport.com/new-ticket">Kontakt </a>| <a href="https://www.livetiming.se/includes/Integritetspolicy ICCMS.pdf">Integritetspolicy</a><br />
-&copy; Copyright 2013 IC Control Media & Sport</p>
-</div>
+<body>	
+  <header>
+      <!-- Logotyp -->
+    <a href="index.html"><img class="logo" src="./images/livetiming_banner.finalpng.png"/></a>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="index.html">Start</a>
+        <a href="SokTavling.html">Sök Tävling</a>
+        <a href="Program1.html">Program</a> 
+        <a href="Filarkiv.html">Filarkiv</a>
+        <a href="Live.html">Live</a>	
+     </div>
+  </header>
+  <div class = "row">
+      <!-- Tävlings menu -->
+      <div class = "side">
+        <div class = "competionmenu">
+         <h2>Välj tävling:</h2>
+          <select class="combobox" id="menu1" name="menu1" onchange="change_comp(this)">
+           <option value="5209">Bäckers Cup 2020</option>
+           <option value="4832">Borås Speedo Meet 2020</option>
+           <option value="5231">Cetus GP pitkät nuoret</option>
+           <option value="4704">Dina Försäkringar Race</option>
+           <option value="5409">Espoonlahden Uinnit 2020</option>
+           <option value="5163">FaluSkinsGames 2020</option>
+           <option value="5367">Finn & Fiffi Arena Cup 2020</option>
+           <option value="5316">FynLangbane 2020</option>
+           <option value="5348">Fynske Børnemesterskaber</option>
+           <option value="4885">ICA Supermarket Cup 2020</option>
+           <option value="5384">Kevätkisat</option>
+           <option value="5346">Länstrofén 2020</option>
+           <option value="5055">Lunds öppna knattemästerskap 2020 - LÖKEN </option>
+           <option value="5376">Njurundasim 2020</option>
+           <option value="5245">Olsbergs Mitt i Prick 2020</option>
+           <option value="4983">Oulun Uinnit</option>
+           <option value="5054">Öppna Skånska Mästerskapen för Masterssimmare 2020</option>
+           <option value="5357">Øst Junior/Senior Langbane 2020</option>
+           <option value="5295">Poängsim 3, 2019-2020</option>
+           <option value="5335">Region Syd Turnering 3</option>
+           <option value="5334">S 71-Cup</option>
+           <option value="4997">Sandaredssimmet 2020</option>
+           <option value="5292">Skomakardoppet 2020</option>
+           <option value="5383">SuSvim Open Feb. 2020</option>
+           <option value="5349">Umestänket 2020</option>
+           <option value="5071">Vantaa Junior Meet</option>
+           <option value="4775">Vest Senior/Junior Langbane</option>
+           <option selected="selected" value="4871">SM/JSM (25m) 2019</option>
+         </select>
+       </div>
+      </div>
 
-    </body>
+      <div class = "main"> 
+
+      </div>
+  </div>  
+  <footer>
+    <p><a href="http://www.livetiming.se/extern.php?type=1&lang=1">RSS Feed</a> | <a href="https://support.iccmediasport.com/new-ticket">Kontakt </a>| <a href="https://www.livetiming.se/includes/Integritetspolicy ICCMS.pdf">Integritetspolicy</a><br />
+      &copy; Copyright 2013 IC Control Media & Sport</p>
+  </footer>
+
+</body>
 </html>

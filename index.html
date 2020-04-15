@@ -9,14 +9,26 @@
 
 </head>
 
-<body class="startpage">	
+<body>	
   <header>
-    <a href="index.html"><img class="logo" src="./images/livetiming_banner.finalpng.png"/></a>	
-    <div class="top_info" style="width:auto;">
-     <div class="top_info_right" style="width:auto;">
-       <h2>Välj tävling:</h2>
-         <select class="combobox" id="menu1" name="menu1" onchange="change_comp(this)">
-         <option value="5209">Bäckers Cup 2020</option>
+      <!-- Logotyp -->
+    <a href="index.html"><img class="logo" src="./images/livetiming_banner.finalpng.png"/></a>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="index.html">Start</a>
+        <a href="SokTavling.html">Sök Tävling</a>
+        <a href="Program1.html">Program</a> 
+        <a href="Filarkiv.html">Filarkiv</a>
+        <a href="Live.html">Live</a>	
+     </div>
+  </header>
+  <div class = "row">
+      <!-- Tävlings menu -->
+      <div class = "column left">
+        <div class = "competionmenu">
+         <h2>Välj tävling:</h2>
+          <select class="combobox" id="menu1" name="menu1" onchange="change_comp(this)">
+           <option value="5209">Bäckers Cup 2020</option>
            <option value="4832">Borås Speedo Meet 2020</option>
            <option value="5231">Cetus GP pitkät nuoret</option>
            <option value="4704">Dina Försäkringar Race</option>
@@ -32,7 +44,6 @@
            <option value="5376">Njurundasim 2020</option>
            <option value="5245">Olsbergs Mitt i Prick 2020</option>
            <option value="4983">Oulun Uinnit</option>
-           <option value="5054">Öppna Skånska Mästerskapen för Masterssimmare 2020</option>
            <option value="5357">Øst Junior/Senior Langbane 2020</option>
            <option value="5295">Poängsim 3, 2019-2020</option>
            <option value="5335">Region Syd Turnering 3</option>
@@ -45,44 +56,32 @@
            <option value="4775">Vest Senior/Junior Langbane</option>
            <option selected="selected" value="4871">SM/JSM (25m) 2019</option>
          </select>
-     </div>
-    </div>
-     </header>
-     
-     <div class="navbar">
-      <a href="index.html">Start</a>
-      <a href="SokTavling.html">Sök Tävling</a>
-      <a href="Program.html">Program</a> 
-      <a href="Filarkiv.html">Filarkiv</a>
-      <a href="Live.html">Live</a>	
-   </div>
+       </div>
+      </div>
 
-	<div class ="centercontent">
-    <img src="./images/adam.png" alt ="simmare" height="100%" width="100%">
-    <div class="centered">
-      <h2>IC Control Livetiming</h2>
-      <p>      
-        Välkommen till IC Controls LiveTiming. Här kan du följa simtävlingar live framför din dator. Gå till Live för att följa tävlingen direkt, 
-        där kan du se resultattavlan från tävlingen med splittider och annan nyttig information. Tiderna kommer in ca 1-2s efter varje vändning och målgång.
-        Efter grenens slut så finns resultatet för grenen uppladdat så fort tävlingsledningen har godkänt det.
-        Sidan innehåller också ett arkiv där alla tidigare tävlingar som kört LiveTiming finns sparade. Bläddra runt i gamla resultat komplett med placeringar och splittider.</p>
-    </div>
-  </div>
-  <div class="footer">
-    <p><a href="http://www.livetiming.se/extern.php?type=1&lang=1">RSS Feed</a> | <a href="https://support.iccmediasport.com/new-ticket">Kontakt </a>| <a href="https://www.livetiming.se/includes/Integritetspolicy ICCMS.pdf">Integritetspolicy</a><br />
-&copy; Copyright 2013 IC Control Media & Sport</p>
-</div>
+      <div class = "column middle"> 
+        <div class="container">
+        <img src="./images/adam.png" alt ="simmare" style="width:100%;">
+          <div class="centered">
+            <h2 style="font-size:2vw;">IC Control Livetiming</h2>
+            <p style="font-size:1vw;">      
+                Välkommen till IC Controls LiveTiming. Här kan du följa simtävlingar live framför din dator. Gå till Live för att följa tävlingen direkt, 
+                där kan du se resultattavlan från tävlingen med splittider och annan nyttig information. Tiderna kommer in ca 1-2s efter varje vändning och målgång.
+                Efter grenens slut så finns resultatet för grenen uppladdat så fort tävlingsledningen har godkänt det.
+                Sidan innehåller också ett arkiv där alla tidigare tävlingar som kört LiveTiming finns sparade. Bläddra runt i gamla resultat komplett med placeringar och splittider.
+            </p>            
+        </div>
+      </div>
+      </div>
 
-<script>
-  function myFunction() {
-    var x = document.getElementById("myNavbar");
-    if (x.className === "navbar") {
-      x.className += " responsive";
-    } else {
-      x.className = "navbar";
-    }
-  }
-  </script>
+      <div class="colum right"></div>
 
+  </div>  
+  <footer>
+    <p><a href="http://www.livetiming.se/extern.php?type=1&lang=1">RSS Feed</a> |
+       <a href="https://support.iccmediasport.com/new-ticket">Kontakt </a>|
+       <a href="https://www.livetiming.se/includes/Integritetspolicy ICCMS.pdf">Integritetspolicy</a><br />
+      &copy; Copyright 2013 IC Control Media & Sport</p>
+  </footer>
 </body>
 </html>
