@@ -1,0 +1,260 @@
+/*
+======================================
+Global rules
+======================================
+*/
+  /* Style the body */
+  header{
+	  margin: 0;
+	  padding: 0;
+  }
+  body {
+	font-family: Arial;
+	background-color: skyblue;
+	padding: 0;
+	margin: 0;
+  }
+  /* Footer */
+ footer {
+	width: 100%;
+	height: 70px;
+	background-color: #58a0c3;
+	text-align: center;
+	border-top: 2px solid black;
+	margin-bottom: 0;
+	margin-top: auto;
+}
+.logo {
+	clip: rect(0px,600px,130px,0px);
+}
+  /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+  * {
+	box-sizing: border-box;
+  }
+   /* Clear floats after the columns */
+   .row:after {
+	content: "";
+	display: table;
+	clear: both;
+  }
+  .row {  
+	background-color: skyblue;
+	display: flex;
+	flex-wrap: wrap;
+  }
+
+/* Create three unequal columns that floats next to each other */
+.column {
+	float: left;
+	padding: 10px;
+  }
+  
+  .left, .right {
+	width: 20%;
+  }
+  
+  .main {
+	width: 60%;
+	padding: 0;
+	margin: 0;
+  }
+  @media screen and (max-width: 750px) {
+	.row, .navbar {   
+	  flex-direction: column;
+	  align-content: center;
+	}
+	.left, .main {
+		width: auto;		
+	}
+	.centeredcontent {
+		max-width: 750px;
+		margin-left:0;
+		margin-right: 0;
+		left:0;
+	}
+	.centeredcontent p {
+		font-size: 14px;
+	}
+	body{
+		max-width: 750px;
+	}
+
+  }
+/*
+======================================
+Menu rules
+======================================
+*/
+/*Tävlings menyn*/  /* Sidebar/left column */
+ 
+   .competionmenu {
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 20px;
+	background-color: #f1f1f1;
+	width: 90%;
+	height: 90%;
+	max-height: 150px;
+	margin-bottom: 10px;
+  }
+  .combobox{
+	  width: 100%;
+  }
+
+  /*Navigerings menyn*/
+  /* Style the top navigation bar */
+  .navbar {
+	padding-top:0;
+	display: flex;
+	background-color: #333;
+  }
+  
+  /* Style the navigation bar links */
+  .navbar a {
+	color: white;
+	padding: 16px 20px;
+	text-decoration: none;
+	text-align: center;
+  }
+  
+  /* Change color on hover */
+  .navbar a:hover {
+	background-color: #e6872a;
+	color: black;
+  }
+/*
+======================================
+Startpage rules
+======================================
+*/
+  /* Container holding the image and the text */
+.container {
+	position: relative;
+	text-align: center;
+}
+.centered {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: rgba(255, 255, 255, 0.7);
+}
+/*
+======================================
+Söktävling rules
+======================================
+*/
+.centeredcontent {
+	width: auto;
+	margin-left: 10%;
+	margin-right: 10%;
+	background-color: wheat;
+	padding: 20px;
+}
+
+.searchbar {
+	align-content: center;
+	padding: 20px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.soktavling {
+	padding: 20px;
+	background-color: white;
+}
+
+.infocontent {
+	width: 100%;
+	top: 0px;
+	background-color: white;
+  }
+  /*CSS för sökbar*/
+  #myInput {
+	background-image: src= "./images/searchicon.png"; /* Add a search icon to input */
+	background-position: 10px 12px; /* Position the search icon */
+	background-repeat: no-repeat; /* Do not repeat the icon image */
+	max-width: 100%; /* Full-width */
+	font-size: 16px; /* Increase font-size */
+	padding: 12px 20px 12px 40px; /* Add some padding */
+	border: 1px solid #ddd; /* Add a grey border */
+	margin-bottom: 12px; /* Add some space below the input */
+  }
+  /*CSS för tabellen*/
+  #table th {
+	  border-bottom: 1px solid #C1DAD7;
+	  letter-spacing: 2px;
+	  text-transform: uppercase;
+	  text-align: left;
+	  padding: 5px;
+	  font: bold 14px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+	  border-left: none;
+  }
+  
+  #table td {
+	  border-right: 1px solid #C1DAD7;
+	  border-bottom: 1px solid #C1DAD7;
+	  padding: 6px 10px;
+  }
+  #table tr {
+	  background: #FFF;
+	  color: #000000;
+  }
+  #table {
+	border-collapse: collapse;
+	  width: 100%;
+	  padding: 0;
+	  margin: 0;
+  }
+  
+  #table tr.alt {
+	  background: #F2E3C6;
+	  color: #000000;
+  }
+/*
+======================================
+Program rules
+======================================
+*/
+  .subbar {
+	color: #F2E3C6;
+	padding-top: 0.2em;
+	padding-bottom: 0.2em;
+	padding-left: 5px;
+	margin: 0 0 5px;
+	background-color: #487099;
+	background-image: url(../../images/grad_sub2.png);
+	background-repeat: repeat-x;
+	background-position: top;
+	overflow: hidden;
+}
+.subbar ul {
+	list-style-type: none;
+}
+.subbar li {
+	margin: 0;
+	float: left;
+	padding-top: 1px;
+	padding-right: 5px;
+	padding-bottom: 1px;
+	padding-left: 7px;
+}
+.subbar li.active {
+	font-weight: bold;
+	text-decoration: underline;
+	background: url(../../images/barleft.gif) no-repeat left center;
+}
+.subbar li a {
+	font-weight: bold;
+	color: #FFF;
+	text-decoration: none;
+}
+.subbar li a:hover {
+	text-decoration: underline;
+}
+/*
+======================================
+ rules
+======================================
+*/
