@@ -23,6 +23,8 @@ Global rules
 	border-top: 2px solid black;
 	margin-bottom: 0;
 	margin-top: auto;
+	bottom: 0;
+	position: fixed;
 }
 .logo {
 	clip: rect(0px,600px,130px,0px);
@@ -57,26 +59,29 @@ Global rules
 	width: 60%;
 	padding: 0;
 	margin: 0;
+	margin-bottom: 75px;
   }
-  @media screen and (max-width: 750px) {
+  @media screen and (max-width: 800px) {
 	.row, .navbar {   
 	  flex-direction: column;
 	  align-content: center;
 	}
 	.left, .main {
-		width: auto;		
+		width: auto;
+		align-content: center;		
+	}
+	body{
+		width: 800px;				
+	}
+	.navbar {
+		width: 100%;
 	}
 	.centeredcontent {
 		max-width: 750px;
-		margin-left:0;
-		margin-right: 0;
-		left:0;
 	}
-	.centeredcontent p {
-		font-size: 14px;
-	}
-	body{
-		max-width: 750px;
+	.centered {
+		max-height: 100%;
+		padding-bottom: 25px;
 	}
 
   }
@@ -105,7 +110,6 @@ Menu rules
   /*Navigerings menyn*/
   /* Style the top navigation bar */
   .navbar {
-	padding-top:0;
 	display: flex;
 	background-color: #333;
   }
@@ -113,7 +117,7 @@ Menu rules
   /* Style the navigation bar links */
   .navbar a {
 	color: white;
-	padding: 16px 20px;
+	padding: 20px 20px;
 	text-decoration: none;
 	text-align: center;
   }
@@ -139,6 +143,7 @@ Startpage rules
 	left: 50%;
 	transform: translate(-50%, -50%);
 	background: rgba(255, 255, 255, 0.7);
+
 }
 /*
 ======================================
@@ -150,7 +155,8 @@ Söktävling rules
 	margin-left: 10%;
 	margin-right: 10%;
 	background-color: wheat;
-	padding: 20px;
+	padding: 20px;	
+	margin-bottom: 75px;
 }
 
 .searchbar {
