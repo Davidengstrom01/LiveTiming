@@ -76,13 +76,19 @@ Global rules
 	.navbar {
 		width: 100%;
 	}
+	.navbar a {
+		padding: 40px 20px;
+	}
 	.centeredcontent {
-		max-width: 750px;
+		width: 800px;
+		margin: 0;
+		padding: 10px;	
+		margin-bottom: 75px;
 	}
 	.centered {
 		max-height: 100%;
 		padding-bottom: 25px;
-	}
+	}	
 
   }
 /*
@@ -172,7 +178,7 @@ Söktävling rules
 }
 
 .infocontent {
-	width: 100%;
+	width: autos;
 	top: 0px;
 	background-color: white;
   }
@@ -208,7 +214,7 @@ Söktävling rules
 	  color: #000000;
   }
   #table {
-	border-collapse: collapse;
+	  border-collapse: collapse;
 	  width: 100%;
 	  padding: 0;
 	  margin: 0;
@@ -230,9 +236,6 @@ Program rules
 	padding-left: 5px;
 	margin: 0 0 5px;
 	background-color: #487099;
-	background-image: url(../../images/grad_sub2.png);
-	background-repeat: repeat-x;
-	background-position: top;
 	overflow: hidden;
 }
 .subbar ul {
@@ -249,7 +252,6 @@ Program rules
 .subbar li.active {
 	font-weight: bold;
 	text-decoration: underline;
-	background: url(../../images/barleft.gif) no-repeat left center;
 }
 .subbar li a {
 	font-weight: bold;
@@ -261,6 +263,10 @@ Program rules
 }
 /*
 ======================================
- rules
+ Live rules
 ======================================
 */
+.video {
+	padding: 40px 40px;
+	margin-left: 20%;
+}
