@@ -1,323 +1,325 @@
 <!DOCTYPE html>
 <html lang="sv">
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Livetiming</title>
-  <link rel="stylesheet" href="css/Livetiming.css">
-  <script src="search.js"></script>
+    <link rel="stylesheet" href="css/Livetiming.css">
+    <script src="search.js"></script>
 
 </head>
 
-<body>	
-  <header>
-      <!-- Logotyp -->
-    <a href="index.html"><img class="logo" src="./images/livetiming_banner.finalpng.png"/></a>
-    <!-- Navigation Bar -->
-    <div class="navbar">
-        <a href="index.html">Start</a>
-        <a href="SokTavling.html">Sök Tävling</a>
-        <a href="Program1.html">Program</a> 
-        <a href="Filarkiv.html">Filarkiv</a>
-        <a href="Live.html">Live</a>	
-     </div>
-  </header>
-  <div class = "row">
-      <!-- Tävlings menu -->
-      <div class = "left">
-        <div class = "competionmenu">
-         <h2>Välj tävling:</h2>
-          <select class="combobox" id="menu1" name="menu1" onchange="change_comp(this)">
-           <option value="5209">Bäckers Cup 2020</option>
-           <option value="4832">Borås Speedo Meet 2020</option>
-           <option value="5231">Cetus GP pitkät nuoret</option>
-           <option value="4704">Dina Försäkringar Race</option>
-           <option value="5409">Espoonlahden Uinnit 2020</option>
-           <option value="5163">FaluSkinsGames 2020</option>
-           <option value="5367">Finn & Fiffi Arena Cup 2020</option>
-           <option value="5316">FynLangbane 2020</option>
-           <option value="5348">Fynske Børnemesterskaber</option>
-           <option value="4885">ICA Supermarket Cup 2020</option>
-           <option value="5384">Kevätkisat</option>
-           <option value="5346">Länstrofén 2020</option>
-           <option value="5055">Lunds öppna knattemästerskap 2020 - LÖKEN </option>
-           <option value="5376">Njurundasim 2020</option>
-           <option value="5245">Olsbergs Mitt i Prick 2020</option>
-           <option value="4983">Oulun Uinnit</option>
-           <option value="5054">Öppna Skånska Mästerskapen för Masterssimmare 2020</option>
-           <option value="5357">Øst Junior/Senior Langbane 2020</option>
-           <option value="5295">Poängsim 3, 2019-2020</option>
-           <option value="5335">Region Syd Turnering 3</option>
-           <option value="5334">S 71-Cup</option>
-           <option value="4997">Sandaredssimmet 2020</option>
-           <option value="5292">Skomakardoppet 2020</option>
-           <option value="5383">SuSvim Open Feb. 2020</option>
-           <option value="5349">Umestänket 2020</option>
-           <option value="5071">Vantaa Junior Meet</option>
-           <option value="4775">Vest Senior/Junior Langbane</option>
-           <option selected="selected" value="4871">SM/JSM (25m) 2019</option>
-         </select>
-       </div>
-      </div>
+<body>
+    <header>
+        <!-- Logotyp -->
+        <a href="index.html"><img class="logo" src="./images/livetiming_banner.finalpng.png" /></a>
+        <!-- Navigation Bar -->
+        <div class="navbar">
+            <a href="index.html">Start</a>
+            <a href="SokTavling.html">Sök Tävling</a>
+            <a href="Program1.html">Program</a>
+            <a href="Filarkiv.html">Filarkiv</a>
+            <a href="Live.html">Live</a>
+        </div>
+    </header>
+    <div class="row">
+        <!-- Tävlings menu -->
+        <div class="left">
+            <div class="competionmenu">
+                <h2>Välj tävling:</h2>
+                <select class="combobox" id="menu1" name="menu1" onchange="change_comp(this)">
+                    <option value="5209">Bäckers Cup 2020</option>
+                    <option value="4832">Borås Speedo Meet 2020</option>
+                    <option value="5231">Cetus GP pitkät nuoret</option>
+                    <option value="4704">Dina Försäkringar Race</option>
+                    <option value="5409">Espoonlahden Uinnit 2020</option>
+                    <option value="5163">FaluSkinsGames 2020</option>
+                    <option value="5367">Finn & Fiffi Arena Cup 2020</option>
+                    <option value="5316">FynLangbane 2020</option>
+                    <option value="5348">Fynske Børnemesterskaber</option>
+                    <option value="4885">ICA Supermarket Cup 2020</option>
+                    <option value="5384">Kevätkisat</option>
+                    <option value="5346">Länstrofén 2020</option>
+                    <option value="5055">Lunds öppna knattemästerskap 2020 - LÖKEN </option>
+                    <option value="5376">Njurundasim 2020</option>
+                    <option value="5245">Olsbergs Mitt i Prick 2020</option>
+                    <option value="4983">Oulun Uinnit</option>
+                    <option value="5054">Öppna Skånska Mästerskapen för Masterssimmare 2020</option>
+                    <option value="5357">Øst Junior/Senior Langbane 2020</option>
+                    <option value="5295">Poängsim 3, 2019-2020</option>
+                    <option value="5335">Region Syd Turnering 3</option>
+                    <option value="5334">S 71-Cup</option>
+                    <option value="4997">Sandaredssimmet 2020</option>
+                    <option value="5292">Skomakardoppet 2020</option>
+                    <option value="5383">SuSvim Open Feb. 2020</option>
+                    <option value="5349">Umestänket 2020</option>
+                    <option value="5071">Vantaa Junior Meet</option>
+                    <option value="4775">Vest Senior/Junior Langbane</option>
+                    <option selected="selected" value="4871">SM/JSM (25m) 2019</option>
+                </select>
+            </div>
+        </div>
 
-      <div class = "main"> 
-        <h1>Filarkiv</h1>
-			<p>Här visas de filer som arrangören har laddat upp till tävlingen och som fritt kan laddas ner av besökarna.</p>
-							<table id="table" cellspacing="0">
-						<tbody>
-							<tr>
-								<th scope="col">Filnamn</th>
-								<th scope="col">Beskrivning</th>
-								<th scope="col">Tillagd</th>
-		 <tr>			<tr class="alt">							
-								<td class="specalt"><a href='/file_archive/4871/TotalResultsSwedishNationalsShortCourse2019.pdf'>TotalResultsSwedishNationalsShortCourse2019.pdf</a></td>
-								<td class="alt">Total resultatlista</td>
-								<td class="alt">2019-11-17 18:59:39</td>
-								</tr>
-							<tr class="">							
-								<td class="spec"><a href='/file_archive/4871/Results_SMJSM_25m_2019_2019_11_13_UTF8.lef'>Results_SMJSM_25m_2019_2019_11_13_UTF8.lef</a></td>
-								<td class="">Lenex resultatfil</td>
-								<td class="">2019-11-17 18:59:12</td>
-								</tr>
-							<tr class="alt">							
-								<td class="specalt"><a href='/file_archive/4871/Results_SMJSM_25m_2019_Extralopp_2019_11_13_UTF8.lef'>Results_SMJSM_25m_2019_Extralopp_2019_11_13_UTF8.lef</a></td>
-								<td class="alt">Lenex resultatfil endast extralopp</td>
-								<td class="alt">2019-11-17 18:58:43</td>
-								</tr>
-							<tr class="">							
-								<td class="spec"><a href='/file_archive/4871/Bsta_seniorklubb_2.pdf'>Bsta_seniorklubb_2.pdf</a></td>
-								<td class="">Bästa seniorklubb</td>
-								<td class="">2019-11-17 18:39:01</td>
-								</tr>
-							<tr class="alt">							
-								<td class="specalt"><a href='/file_archive/4871/Bsta_juniorklubb_2.pdf'>Bsta_juniorklubb_2.pdf</a></td>
-								<td class="alt">Bästa juniorklubb</td>
-								<td class="alt">2019-11-17 18:38:51</td>
-								</tr>
-							<tr class="">							
-								<td class="spec"><a href='/file_archive/4871/Laguppstllning_pass_10_1.pdf'>Laguppstllning_pass_10_1.pdf</a></td>
-								<td class="">Laguppställningar pass 10</td>
-								<td class="">2019-11-17 13:32:32</td>
-								</tr>
-							<tr class="alt">							
-								<td class="specalt"><a href='/file_archive/4871/Tidsprogram_Sndag_17_november_2019_kl_1700.pdf'>Tidsprogram_Sndag_17_november_2019_kl_1700.pdf</a></td>
-								<td class="alt">Tidsprogram pass 10 söndag</td>
-								<td class="alt">2019-11-17 12:58:04</td>
-								</tr>
-							<tr class="">							
-								<td class="spec"><a href='/file_archive/4871/Heatlista_pass_10.pdf'>Heatlista_pass_10.pdf</a></td>
-								<td class="">Heatlista pass 10</td>
-								<td class="">2019-11-17 12:57:51</td>
-								</tr>
-							<tr class="alt">							
-								<td class="specalt"><a href='/file_archive/4871/Resultat_gren_99_200m_Extralopp_Herrar_Sndag_Final.pdf'>Resultat_gren_99_200m_Extralopp_Herrar_Sndag_Final.pdf</a></td>
-								<td class="alt">Resultat extralopp herrar söndag</td>
-								<td class="alt">2019-11-17 12:35:53</td>
-								</tr>
-							<tr class="">							
-								<td class="spec"><a href='/file_archive/4871/Resultat_gren_98_200m_Extralopp_Damer_Sndag_Final.pdf'>Resultat_gren_98_200m_Extralopp_Damer_Sndag_Final.pdf</a></td>
-								<td class="">Resultat extralopp damer söndag</td>
-								<td class="">2019-11-17 12:25:13</td>
-								</tr>
-							<tr class="alt">							
-								<td class="specalt"><a href='/file_archive/4871/Heatlista_extralopp_sndag.pdf'>Heatlista_extralopp_sndag.pdf</a></td>
-								<td class="alt">Heatlista extralopp söndag</td>
-								<td class="alt">2019-11-17 09:24:45</td>
-								</tr>
-							<tr class="">							
-								<td class="spec"><a href='/file_archive/4871/Heatlista_pass_9.pdf'>Heatlista_pass_9.pdf</a></td>
-								<td class="">Heatlista pass 9</td>
-								<td class="">2019-11-16 20:10:34</td>
-								</tr>
-							<tr class="alt">							
-								<td class="specalt"><a href='/file_archive/4871/Tidsprogram_Sndag_17_november_2019_kl_0930.pdf'>Tidsprogram_Sndag_17_november_2019_kl_0930.pdf</a></td>
-								<td class="alt">Tidsprogram pass 9 söndag</td>
-								<td class="alt">2019-11-16 20:10:25</td>
-								</tr>
-							<tr class="">							
-								<td class="spec"><a href='/file_archive/4871/Laguppstllning_pass_9.pdf'>Laguppstllning_pass_9.pdf</a></td>
-								<td class="">Laguppställningar pass 9</td>
-								<td class="">2019-11-16 20:10:11</td>
-								</tr>
-							<tr class="alt">							
-								<td class="specalt"><a href='/file_archive/4871/Tidsprogram_Lrdag_16_november_2019_kl_1730_1.pdf'>Tidsprogram_Lrdag_16_november_2019_kl_1730_1.pdf</a></td>
-								<td class="alt">Tidsprogram pass 8 lördag</td>
-								<td class="alt">2019-11-16 16:57:48</td>
-								</tr>
-							<tr class="">							
-								<td class="spec"><a href='/file_archive/4871/Heatlista_Pass_8_1.pdf'>Heatlista_Pass_8_1.pdf</a></td>
-								<td class="">Heatlista pass 8</td>
-								<td class="">2019-11-16 16:57:37</td>
-								</tr>
-							<tr class="alt">							
-								<td class="specalt"><a href='/file_archive/4871/Laguppstllning_pass_8.pdf'>Laguppstllning_pass_8.pdf</a></td>
-								<td class="alt">Laguppställningar pass 8</td>
-								<td class="alt">2019-11-16 13:16:31</td>
-								</tr>
-							<tr class="">							
-								<td class="spec"><a href='/file_archive/4871/Resultat_gren_97_200m_Extralopp_Damer_Lrdag_Final.pdf'>Resultat_gren_97_200m_Extralopp_Damer_Lrdag_Final.pdf</a></td>
-								<td class="">Resultat extralopp damer lördag</td>
-								<td class="">2019-11-16 12:40:13</td>
-								</tr>
-							<tr class="alt">							
-								<td class="specalt"><a href='/file_archive/4871/Resultat_gren_96_200m_Extralopp_Herrar_Lrdag_Final.pdf'>Resultat_gren_96_200m_Extralopp_Herrar_Lrdag_Final.pdf</a></td>
-								<td class="alt">Resultat extralopp herrar lördag</td>
-								<td class="alt">2019-11-16 12:35:06</td>
-								</tr>
-							<tr class="">							
-								<td class="spec"><a href='/file_archive/4871/Heatlista_Extralopp_lrdag.pdf'>Heatlista_Extralopp_lrdag.pdf</a></td>
-								<td class="">Heatlista extralopp lördag</td>
-								<td class="">2019-11-16 09:05:43</td>
-								</tr>
-							<tr class="alt">							
-								<td class="specalt"><a href='/file_archive/4871/Tidsprogram_Lrdag_16_november_2019_kl_0930.pdf'>Tidsprogram_Lrdag_16_november_2019_kl_0930.pdf</a></td>
-								<td class="alt">Tidsprogram pass 7 lördag</td>
-								<td class="alt">2019-11-15 20:16:27</td>
-								</tr>
-							<tr class="">							
-								<td class="spec"><a href='/file_archive/4871/Laguppstllning_pass_7.pdf'>Laguppstllning_pass_7.pdf</a></td>
-								<td class="">Laguppställningar pass 7</td>
-								<td class="">2019-11-15 20:16:13</td>
-								</tr>
-							<tr class="alt">							
-								<td class="specalt"><a href='/file_archive/4871/Heatlista_Pass_7.pdf'>Heatlista_Pass_7.pdf</a></td>
-								<td class="alt">Heatlista pass 7</td>
-								<td class="alt">2019-11-15 20:15:59</td>
-								</tr>
-							<tr class="">							
-								<td class="spec"><a href='/file_archive/4871/Tidsprogram_Fredag_15_november_2019_kl_1730.pdf'>Tidsprogram_Fredag_15_november_2019_kl_1730.pdf</a></td>
-								<td class="">Tidsprogram pass 6 fredag</td>
-								<td class="">2019-11-15 12:51:19</td>
-								</tr>
-							<tr class="alt">							
-								<td class="specalt"><a href='/file_archive/4871/Laguppstllning_pass_6.pdf'>Laguppstllning_pass_6.pdf</a></td>
-								<td class="alt">Laguppställningar pass 6</td>
-								<td class="alt">2019-11-15 12:49:47</td>
-								</tr>
-							<tr class="">							
-								<td class="spec"><a href='/file_archive/4871/Heatlista_Pass_6.pdf'>Heatlista_Pass_6.pdf</a></td>
-								<td class="">Heatlista pass 6</td>
-								<td class="">2019-11-15 12:49:33</td>
-								</tr>
-							<tr class="alt">							
-								<td class="specalt"><a href='/file_archive/4871/Resultat_gren_95_200m_Extralopp_Damer_Fredag_Final.pdf'>Resultat_gren_95_200m_Extralopp_Damer_Fredag_Final.pdf</a></td>
-								<td class="alt">Resultat extralopp damer fredag</td>
-								<td class="alt">2019-11-15 12:25:26</td>
-								</tr>
-							<tr class="">							
-								<td class="spec"><a href='/file_archive/4871/Resultat_gren_94_200m_Extralopp_Herrar_Fredag_Final.pdf'>Resultat_gren_94_200m_Extralopp_Herrar_Fredag_Final.pdf</a></td>
-								<td class="">Resultat extralopp herrar fredag</td>
-								<td class="">2019-11-15 12:24:11</td>
-								</tr>
-							<tr class="alt">							
-								<td class="specalt"><a href='/file_archive/4871/Laguppstllning_pass5.pdf'>Laguppstllning_pass5.pdf</a></td>
-								<td class="alt">Laguppställningar pass 5</td>
-								<td class="alt">2019-11-14 20:22:23</td>
-								</tr>
-							<tr class="">							
-								<td class="spec"><a href='/file_archive/4871/Tidsprogram_Fredag_15_november_2019_kl_0930.pdf'>Tidsprogram_Fredag_15_november_2019_kl_0930.pdf</a></td>
-								<td class="">Tidsprogram pass 5 fredag</td>
-								<td class="">2019-11-14 20:22:11</td>
-								</tr>
-							<tr class="alt">							
-								<td class="specalt"><a href='/file_archive/4871/Heatlista_pass_5.pdf'>Heatlista_pass_5.pdf</a></td>
-								<td class="alt">Heatlista pass 5</td>
-								<td class="alt">2019-11-14 20:21:54</td>
-								</tr>
-							<tr class="">							
-								<td class="spec"><a href='/file_archive/4871/Laguppstllning_pass4.pdf'>Laguppstllning_pass4.pdf</a></td>
-								<td class="">Laguppställningar pass 4</td>
-								<td class="">2019-11-14 16:21:55</td>
-								</tr>
-							<tr class="alt">							
-								<td class="specalt"><a href='/file_archive/4871/Tidsprogram_Torsdag_14_november_2019_kl_1730.pdf'>Tidsprogram_Torsdag_14_november_2019_kl_1730.pdf</a></td>
-								<td class="alt">Tidsprogram pass 4 torsdag</td>
-								<td class="alt">2019-11-14 16:21:40</td>
-								</tr>
-							<tr class="">							
-								<td class="spec"><a href='/file_archive/4871/Heatlista_pass_4.pdf'>Heatlista_pass_4.pdf</a></td>
-								<td class="">Heatlista pass 4</td>
-								<td class="">2019-11-14 16:21:22</td>
-								</tr>
-							<tr class="alt">							
-								<td class="specalt"><a href='/file_archive/4871/Resultat_gren_92_200m_Extralopp_Herrar_Torsdag_Final_1.pdf'>Resultat_gren_92_200m_Extralopp_Herrar_Torsdag_Final_1.pdf</a></td>
-								<td class="alt">Resultat extralopp herrar torsdag</td>
-								<td class="alt">2019-11-14 12:57:47</td>
-								</tr>
-							<tr class="">							
-								<td class="spec"><a href='/file_archive/4871/Resultat_gren_93_200m_Extralopp_Damer_Torsdag_Final.pdf'>Resultat_gren_93_200m_Extralopp_Damer_Torsdag_Final.pdf</a></td>
-								<td class="">Resultat extralopp damer torsdag</td>
-								<td class="">2019-11-14 12:57:15</td>
-								</tr>
-							<tr class="alt">							
-								<td class="specalt"><a href='/file_archive/4871/Heatlista_Extralopp_torsdag.pdf'>Heatlista_Extralopp_torsdag.pdf</a></td>
-								<td class="alt">Heatlista extralopp torsdag</td>
-								<td class="alt">2019-11-14 09:17:56</td>
-								</tr>
-							<tr class="">							
-								<td class="spec"><a href='/file_archive/4871/Laguppstllning_pass3_1.pdf'>Laguppstllning_pass3_1.pdf</a></td>
-								<td class="">Laguppställningar pass 3</td>
-								<td class="">2019-11-14 09:17:37</td>
-								</tr>
-							<tr class="alt">							
-								<td class="specalt"><a href='/file_archive/4871/Tidsprogram_Torsdag_14_november_2019_kl_0930.pdf'>Tidsprogram_Torsdag_14_november_2019_kl_0930.pdf</a></td>
-								<td class="alt">Tidsprogram pass 3 torsdag</td>
-								<td class="alt">2019-11-14 08:26:59</td>
-								</tr>
-							<tr class="">							
-								<td class="spec"><a href='/file_archive/4871/Heatlista_pass_3.pdf'>Heatlista_pass_3.pdf</a></td>
-								<td class="">Heatlista pass 3</td>
-								<td class="">2019-11-14 08:26:03</td>
-								</tr>
-							<tr class="alt">							
-								<td class="specalt"><a href='/file_archive/4871/Laguppstllning_Pass_2_1.pdf'>Laguppstllning_Pass_2_1.pdf</a></td>
-								<td class="alt">Laguppställningar pass 2</td>
-								<td class="alt">2019-11-13 13:30:42</td>
-								</tr>
-							<tr class="">							
-								<td class="spec"><a href='/file_archive/4871/Tidsprogram_Onsdag_13_november_2019_kl_1730.pdf'>Tidsprogram_Onsdag_13_november_2019_kl_1730.pdf</a></td>
-								<td class="">Tidsprogram pass 2 onsdag</td>
-								<td class="">2019-11-13 13:25:22</td>
-								</tr>
-							<tr class="alt">							
-								<td class="specalt"><a href='/file_archive/4871/Heatlista_Pass_2.pdf'>Heatlista_Pass_2.pdf</a></td>
-								<td class="alt">Heatlista pass 2</td>
-								<td class="alt">2019-11-13 13:24:30</td>
-								</tr>
-							<tr class="">							
-								<td class="spec"><a href='/file_archive/4871/Resultat_gren_90_200m_Extralopp_Herrar_Onsdag_Final.pdf'>Resultat_gren_90_200m_Extralopp_Herrar_Onsdag_Final.pdf</a></td>
-								<td class="">Resultat Extralopp onsdag</td>
-								<td class="">2019-11-13 12:52:35</td>
-								</tr>
-							<tr class="alt">							
-								<td class="specalt"><a href='/file_archive/4871/Tidsprogram_Onsdag_13_november_2019_kl_0930.pdf'>Tidsprogram_Onsdag_13_november_2019_kl_0930.pdf</a></td>
-								<td class="alt">Tidsprogram pass 1</td>
-								<td class="alt">2019-11-13 08:48:36</td>
-								</tr>
-							<tr class="">							
-								<td class="spec"><a href='/file_archive/4871/Laguppstllning_pass1.pdf'>Laguppstllning_pass1.pdf</a></td>
-								<td class="">Laguppställningar pass 1</td>
-								<td class="">2019-11-13 08:48:11</td>
-								</tr>
-							<tr class="alt">							
-								<td class="specalt"><a href='/file_archive/4871/Heatlista_pass_1.pdf'>Heatlista_pass_1.pdf</a></td>
-								<td class="alt">Heatlista pass 1</td>
-								<td class="alt">2019-11-13 08:47:49</td>
-								</tr>
-							<tr class="">							
-								<td class="spec"><a href='/file_archive/4871/SMJSM_25m_2019_inbjudan.pdf'>SMJSM_25m_2019_inbjudan.pdf</a></td>
-								<td class="">Inbjudan</td>
-								<td class="">2019-11-07 09:26:03</td>
-								</tr>
-			      	</tbody>
-            </table>				
-          <br />
-		    </div> 
-      <footer>
-    <p><a href="http://www.livetiming.se/extern.php?type=1&lang=1">RSS Feed</a> | <a href="https://support.iccmediasport.com/new-ticket">Kontakt </a>| <a href="https://www.livetiming.se/includes/Integritetspolicy ICCMS.pdf">Integritetspolicy</a><br />
-      &copy; Copyright 2013 IC Control Media & Sport</p>
-  </footer>
-
+        <div class="main">
+            <div class="center">
+                <h1>Filarkiv</h1>
+                <p>Här visas de filer som arrangören har laddat upp till tävlingen och som fritt kan laddas ner av besökarna.</p>
+                <table id="table" cellspacing="0">
+                    <tbody>
+                        <tr>
+                            <th scope="col">Filnamn</th>
+                            <th scope="col">Beskrivning</th>
+                            <th scope="col">Tillagd</th>
+                            <tr>
+                                <tr class="alt">
+                                    <td class="specalt"><a href='/file_archive/4871/TotalResultsSwedishNationalsShortCourse2019.pdf'>TotalResultsSwedishNationalsShortCourse2019.pdf</a></td>
+                                    <td class="alt">Total resultatlista</td>
+                                    <td class="alt">2019-11-17 18:59:39</td>
+                                </tr>
+                                <tr class="">
+                                    <td class="spec"><a href='/file_archive/4871/Results_SMJSM_25m_2019_2019_11_13_UTF8.lef'>Results_SMJSM_25m_2019_2019_11_13_UTF8.lef</a></td>
+                                    <td class="">Lenex resultatfil</td>
+                                    <td class="">2019-11-17 18:59:12</td>
+                                </tr>
+                                <tr class="alt">
+                                    <td class="specalt"><a href='/file_archive/4871/Results_SMJSM_25m_2019_Extralopp_2019_11_13_UTF8.lef'>Results_SMJSM_25m_2019_Extralopp_2019_11_13_UTF8.lef</a></td>
+                                    <td class="alt">Lenex resultatfil endast extralopp</td>
+                                    <td class="alt">2019-11-17 18:58:43</td>
+                                </tr>
+                                <tr class="">
+                                    <td class="spec"><a href='/file_archive/4871/Bsta_seniorklubb_2.pdf'>Bsta_seniorklubb_2.pdf</a></td>
+                                    <td class="">Bästa seniorklubb</td>
+                                    <td class="">2019-11-17 18:39:01</td>
+                                </tr>
+                                <tr class="alt">
+                                    <td class="specalt"><a href='/file_archive/4871/Bsta_juniorklubb_2.pdf'>Bsta_juniorklubb_2.pdf</a></td>
+                                    <td class="alt">Bästa juniorklubb</td>
+                                    <td class="alt">2019-11-17 18:38:51</td>
+                                </tr>
+                                <tr class="">
+                                    <td class="spec"><a href='/file_archive/4871/Laguppstllning_pass_10_1.pdf'>Laguppstllning_pass_10_1.pdf</a></td>
+                                    <td class="">Laguppställningar pass 10</td>
+                                    <td class="">2019-11-17 13:32:32</td>
+                                </tr>
+                                <tr class="alt">
+                                    <td class="specalt"><a href='/file_archive/4871/Tidsprogram_Sndag_17_november_2019_kl_1700.pdf'>Tidsprogram_Sndag_17_november_2019_kl_1700.pdf</a></td>
+                                    <td class="alt">Tidsprogram pass 10 söndag</td>
+                                    <td class="alt">2019-11-17 12:58:04</td>
+                                </tr>
+                                <tr class="">
+                                    <td class="spec"><a href='/file_archive/4871/Heatlista_pass_10.pdf'>Heatlista_pass_10.pdf</a></td>
+                                    <td class="">Heatlista pass 10</td>
+                                    <td class="">2019-11-17 12:57:51</td>
+                                </tr>
+                                <tr class="alt">
+                                    <td class="specalt"><a href='/file_archive/4871/Resultat_gren_99_200m_Extralopp_Herrar_Sndag_Final.pdf'>Resultat_gren_99_200m_Extralopp_Herrar_Sndag_Final.pdf</a></td>
+                                    <td class="alt">Resultat extralopp herrar söndag</td>
+                                    <td class="alt">2019-11-17 12:35:53</td>
+                                </tr>
+                                <tr class="">
+                                    <td class="spec"><a href='/file_archive/4871/Resultat_gren_98_200m_Extralopp_Damer_Sndag_Final.pdf'>Resultat_gren_98_200m_Extralopp_Damer_Sndag_Final.pdf</a></td>
+                                    <td class="">Resultat extralopp damer söndag</td>
+                                    <td class="">2019-11-17 12:25:13</td>
+                                </tr>
+                                <tr class="alt">
+                                    <td class="specalt"><a href='/file_archive/4871/Heatlista_extralopp_sndag.pdf'>Heatlista_extralopp_sndag.pdf</a></td>
+                                    <td class="alt">Heatlista extralopp söndag</td>
+                                    <td class="alt">2019-11-17 09:24:45</td>
+                                </tr>
+                                <tr class="">
+                                    <td class="spec"><a href='/file_archive/4871/Heatlista_pass_9.pdf'>Heatlista_pass_9.pdf</a></td>
+                                    <td class="">Heatlista pass 9</td>
+                                    <td class="">2019-11-16 20:10:34</td>
+                                </tr>
+                                <tr class="alt">
+                                    <td class="specalt"><a href='/file_archive/4871/Tidsprogram_Sndag_17_november_2019_kl_0930.pdf'>Tidsprogram_Sndag_17_november_2019_kl_0930.pdf</a></td>
+                                    <td class="alt">Tidsprogram pass 9 söndag</td>
+                                    <td class="alt">2019-11-16 20:10:25</td>
+                                </tr>
+                                <tr class="">
+                                    <td class="spec"><a href='/file_archive/4871/Laguppstllning_pass_9.pdf'>Laguppstllning_pass_9.pdf</a></td>
+                                    <td class="">Laguppställningar pass 9</td>
+                                    <td class="">2019-11-16 20:10:11</td>
+                                </tr>
+                                <tr class="alt">
+                                    <td class="specalt"><a href='/file_archive/4871/Tidsprogram_Lrdag_16_november_2019_kl_1730_1.pdf'>Tidsprogram_Lrdag_16_november_2019_kl_1730_1.pdf</a></td>
+                                    <td class="alt">Tidsprogram pass 8 lördag</td>
+                                    <td class="alt">2019-11-16 16:57:48</td>
+                                </tr>
+                                <tr class="">
+                                    <td class="spec"><a href='/file_archive/4871/Heatlista_Pass_8_1.pdf'>Heatlista_Pass_8_1.pdf</a></td>
+                                    <td class="">Heatlista pass 8</td>
+                                    <td class="">2019-11-16 16:57:37</td>
+                                </tr>
+                                <tr class="alt">
+                                    <td class="specalt"><a href='/file_archive/4871/Laguppstllning_pass_8.pdf'>Laguppstllning_pass_8.pdf</a></td>
+                                    <td class="alt">Laguppställningar pass 8</td>
+                                    <td class="alt">2019-11-16 13:16:31</td>
+                                </tr>
+                                <tr class="">
+                                    <td class="spec"><a href='/file_archive/4871/Resultat_gren_97_200m_Extralopp_Damer_Lrdag_Final.pdf'>Resultat_gren_97_200m_Extralopp_Damer_Lrdag_Final.pdf</a></td>
+                                    <td class="">Resultat extralopp damer lördag</td>
+                                    <td class="">2019-11-16 12:40:13</td>
+                                </tr>
+                                <tr class="alt">
+                                    <td class="specalt"><a href='/file_archive/4871/Resultat_gren_96_200m_Extralopp_Herrar_Lrdag_Final.pdf'>Resultat_gren_96_200m_Extralopp_Herrar_Lrdag_Final.pdf</a></td>
+                                    <td class="alt">Resultat extralopp herrar lördag</td>
+                                    <td class="alt">2019-11-16 12:35:06</td>
+                                </tr>
+                                <tr class="">
+                                    <td class="spec"><a href='/file_archive/4871/Heatlista_Extralopp_lrdag.pdf'>Heatlista_Extralopp_lrdag.pdf</a></td>
+                                    <td class="">Heatlista extralopp lördag</td>
+                                    <td class="">2019-11-16 09:05:43</td>
+                                </tr>
+                                <tr class="alt">
+                                    <td class="specalt"><a href='/file_archive/4871/Tidsprogram_Lrdag_16_november_2019_kl_0930.pdf'>Tidsprogram_Lrdag_16_november_2019_kl_0930.pdf</a></td>
+                                    <td class="alt">Tidsprogram pass 7 lördag</td>
+                                    <td class="alt">2019-11-15 20:16:27</td>
+                                </tr>
+                                <tr class="">
+                                    <td class="spec"><a href='/file_archive/4871/Laguppstllning_pass_7.pdf'>Laguppstllning_pass_7.pdf</a></td>
+                                    <td class="">Laguppställningar pass 7</td>
+                                    <td class="">2019-11-15 20:16:13</td>
+                                </tr>
+                                <tr class="alt">
+                                    <td class="specalt"><a href='/file_archive/4871/Heatlista_Pass_7.pdf'>Heatlista_Pass_7.pdf</a></td>
+                                    <td class="alt">Heatlista pass 7</td>
+                                    <td class="alt">2019-11-15 20:15:59</td>
+                                </tr>
+                                <tr class="">
+                                    <td class="spec"><a href='/file_archive/4871/Tidsprogram_Fredag_15_november_2019_kl_1730.pdf'>Tidsprogram_Fredag_15_november_2019_kl_1730.pdf</a></td>
+                                    <td class="">Tidsprogram pass 6 fredag</td>
+                                    <td class="">2019-11-15 12:51:19</td>
+                                </tr>
+                                <tr class="alt">
+                                    <td class="specalt"><a href='/file_archive/4871/Laguppstllning_pass_6.pdf'>Laguppstllning_pass_6.pdf</a></td>
+                                    <td class="alt">Laguppställningar pass 6</td>
+                                    <td class="alt">2019-11-15 12:49:47</td>
+                                </tr>
+                                <tr class="">
+                                    <td class="spec"><a href='/file_archive/4871/Heatlista_Pass_6.pdf'>Heatlista_Pass_6.pdf</a></td>
+                                    <td class="">Heatlista pass 6</td>
+                                    <td class="">2019-11-15 12:49:33</td>
+                                </tr>
+                                <tr class="alt">
+                                    <td class="specalt"><a href='/file_archive/4871/Resultat_gren_95_200m_Extralopp_Damer_Fredag_Final.pdf'>Resultat_gren_95_200m_Extralopp_Damer_Fredag_Final.pdf</a></td>
+                                    <td class="alt">Resultat extralopp damer fredag</td>
+                                    <td class="alt">2019-11-15 12:25:26</td>
+                                </tr>
+                                <tr class="">
+                                    <td class="spec"><a href='/file_archive/4871/Resultat_gren_94_200m_Extralopp_Herrar_Fredag_Final.pdf'>Resultat_gren_94_200m_Extralopp_Herrar_Fredag_Final.pdf</a></td>
+                                    <td class="">Resultat extralopp herrar fredag</td>
+                                    <td class="">2019-11-15 12:24:11</td>
+                                </tr>
+                                <tr class="alt">
+                                    <td class="specalt"><a href='/file_archive/4871/Laguppstllning_pass5.pdf'>Laguppstllning_pass5.pdf</a></td>
+                                    <td class="alt">Laguppställningar pass 5</td>
+                                    <td class="alt">2019-11-14 20:22:23</td>
+                                </tr>
+                                <tr class="">
+                                    <td class="spec"><a href='/file_archive/4871/Tidsprogram_Fredag_15_november_2019_kl_0930.pdf'>Tidsprogram_Fredag_15_november_2019_kl_0930.pdf</a></td>
+                                    <td class="">Tidsprogram pass 5 fredag</td>
+                                    <td class="">2019-11-14 20:22:11</td>
+                                </tr>
+                                <tr class="alt">
+                                    <td class="specalt"><a href='/file_archive/4871/Heatlista_pass_5.pdf'>Heatlista_pass_5.pdf</a></td>
+                                    <td class="alt">Heatlista pass 5</td>
+                                    <td class="alt">2019-11-14 20:21:54</td>
+                                </tr>
+                                <tr class="">
+                                    <td class="spec"><a href='/file_archive/4871/Laguppstllning_pass4.pdf'>Laguppstllning_pass4.pdf</a></td>
+                                    <td class="">Laguppställningar pass 4</td>
+                                    <td class="">2019-11-14 16:21:55</td>
+                                </tr>
+                                <tr class="alt">
+                                    <td class="specalt"><a href='/file_archive/4871/Tidsprogram_Torsdag_14_november_2019_kl_1730.pdf'>Tidsprogram_Torsdag_14_november_2019_kl_1730.pdf</a></td>
+                                    <td class="alt">Tidsprogram pass 4 torsdag</td>
+                                    <td class="alt">2019-11-14 16:21:40</td>
+                                </tr>
+                                <tr class="">
+                                    <td class="spec"><a href='/file_archive/4871/Heatlista_pass_4.pdf'>Heatlista_pass_4.pdf</a></td>
+                                    <td class="">Heatlista pass 4</td>
+                                    <td class="">2019-11-14 16:21:22</td>
+                                </tr>
+                                <tr class="alt">
+                                    <td class="specalt"><a href='/file_archive/4871/Resultat_gren_92_200m_Extralopp_Herrar_Torsdag_Final_1.pdf'>Resultat_gren_92_200m_Extralopp_Herrar_Torsdag_Final_1.pdf</a></td>
+                                    <td class="alt">Resultat extralopp herrar torsdag</td>
+                                    <td class="alt">2019-11-14 12:57:47</td>
+                                </tr>
+                                <tr class="">
+                                    <td class="spec"><a href='/file_archive/4871/Resultat_gren_93_200m_Extralopp_Damer_Torsdag_Final.pdf'>Resultat_gren_93_200m_Extralopp_Damer_Torsdag_Final.pdf</a></td>
+                                    <td class="">Resultat extralopp damer torsdag</td>
+                                    <td class="">2019-11-14 12:57:15</td>
+                                </tr>
+                                <tr class="alt">
+                                    <td class="specalt"><a href='/file_archive/4871/Heatlista_Extralopp_torsdag.pdf'>Heatlista_Extralopp_torsdag.pdf</a></td>
+                                    <td class="alt">Heatlista extralopp torsdag</td>
+                                    <td class="alt">2019-11-14 09:17:56</td>
+                                </tr>
+                                <tr class="">
+                                    <td class="spec"><a href='/file_archive/4871/Laguppstllning_pass3_1.pdf'>Laguppstllning_pass3_1.pdf</a></td>
+                                    <td class="">Laguppställningar pass 3</td>
+                                    <td class="">2019-11-14 09:17:37</td>
+                                </tr>
+                                <tr class="alt">
+                                    <td class="specalt"><a href='/file_archive/4871/Tidsprogram_Torsdag_14_november_2019_kl_0930.pdf'>Tidsprogram_Torsdag_14_november_2019_kl_0930.pdf</a></td>
+                                    <td class="alt">Tidsprogram pass 3 torsdag</td>
+                                    <td class="alt">2019-11-14 08:26:59</td>
+                                </tr>
+                                <tr class="">
+                                    <td class="spec"><a href='/file_archive/4871/Heatlista_pass_3.pdf'>Heatlista_pass_3.pdf</a></td>
+                                    <td class="">Heatlista pass 3</td>
+                                    <td class="">2019-11-14 08:26:03</td>
+                                </tr>
+                                <tr class="alt">
+                                    <td class="specalt"><a href='/file_archive/4871/Laguppstllning_Pass_2_1.pdf'>Laguppstllning_Pass_2_1.pdf</a></td>
+                                    <td class="alt">Laguppställningar pass 2</td>
+                                    <td class="alt">2019-11-13 13:30:42</td>
+                                </tr>
+                                <tr class="">
+                                    <td class="spec"><a href='/file_archive/4871/Tidsprogram_Onsdag_13_november_2019_kl_1730.pdf'>Tidsprogram_Onsdag_13_november_2019_kl_1730.pdf</a></td>
+                                    <td class="">Tidsprogram pass 2 onsdag</td>
+                                    <td class="">2019-11-13 13:25:22</td>
+                                </tr>
+                                <tr class="alt">
+                                    <td class="specalt"><a href='/file_archive/4871/Heatlista_Pass_2.pdf'>Heatlista_Pass_2.pdf</a></td>
+                                    <td class="alt">Heatlista pass 2</td>
+                                    <td class="alt">2019-11-13 13:24:30</td>
+                                </tr>
+                                <tr class="">
+                                    <td class="spec"><a href='/file_archive/4871/Resultat_gren_90_200m_Extralopp_Herrar_Onsdag_Final.pdf'>Resultat_gren_90_200m_Extralopp_Herrar_Onsdag_Final.pdf</a></td>
+                                    <td class="">Resultat Extralopp onsdag</td>
+                                    <td class="">2019-11-13 12:52:35</td>
+                                </tr>
+                                <tr class="alt">
+                                    <td class="specalt"><a href='/file_archive/4871/Tidsprogram_Onsdag_13_november_2019_kl_0930.pdf'>Tidsprogram_Onsdag_13_november_2019_kl_0930.pdf</a></td>
+                                    <td class="alt">Tidsprogram pass 1</td>
+                                    <td class="alt">2019-11-13 08:48:36</td>
+                                </tr>
+                                <tr class="">
+                                    <td class="spec"><a href='/file_archive/4871/Laguppstllning_pass1.pdf'>Laguppstllning_pass1.pdf</a></td>
+                                    <td class="">Laguppställningar pass 1</td>
+                                    <td class="">2019-11-13 08:48:11</td>
+                                </tr>
+                                <tr class="alt">
+                                    <td class="specalt"><a href='/file_archive/4871/Heatlista_pass_1.pdf'>Heatlista_pass_1.pdf</a></td>
+                                    <td class="alt">Heatlista pass 1</td>
+                                    <td class="alt">2019-11-13 08:47:49</td>
+                                </tr>
+                                <tr class="">
+                                    <td class="spec"><a href='/file_archive/4871/SMJSM_25m_2019_inbjudan.pdf'>SMJSM_25m_2019_inbjudan.pdf</a></td>
+                                    <td class="">Inbjudan</td>
+                                    <td class="">2019-11-07 09:26:03</td>
+                                </tr>
+                    </tbody>
+                </table>
+                <br />
+            </div>
+        </div>
+        <footer>
+            <p><a href="http://www.livetiming.se/extern.php?type=1&lang=1">RSS Feed</a> | <a href="https://support.iccmediasport.com/new-ticket">Kontakt </a>| <a href="https://www.livetiming.se/includes/Integritetspolicy ICCMS.pdf">Integritetspolicy</a>
+                <br /> &copy; Copyright 2013 IC Control Media & Sport</p>
+        </footer>
 </body>
 </html>
-
