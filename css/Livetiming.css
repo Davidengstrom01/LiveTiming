@@ -61,36 +61,6 @@ Global rules
 	margin: 0;
 	margin-bottom: 75px;
   }
-  @media screen and (max-width: 800px) {
-	.row, .navbar {   
-	  flex-direction: column;
-	  align-content: center;
-	}
-	.left, .main {
-		width: auto;
-		align-content: center;		
-	}
-	body{
-		width: 800px;				
-	}
-	.navbar {
-		width: 100%;
-	}
-	.navbar a {
-		padding: 40px 20px;
-	}
-	.centeredcontent {
-		width: 800px;
-		margin: 0;
-		padding: 10px;	
-		margin-bottom: 75px;
-	}
-	.centered {
-		max-height: 100%;
-		padding-bottom: 25px;
-	}	
-
-  }
 /*
 ======================================
 Menu rules
@@ -149,20 +119,26 @@ Startpage rules
 	left: 50%;
 	transform: translate(-50%, -50%);
 	background: rgba(255, 255, 255, 0.7);
-
 }
+.centered p {
+	font-size: 16px;
+}
+.centered h2 {
+	font-size: 22px;
+}
+
 /*
 ======================================
 Söktävling rules
 ======================================
 */
 .centeredcontent {
-	width: auto;
-	margin-left: 10%;
-	margin-right: 10%;
-	background-color: wheat;
+	background-color:wheat;
 	padding: 20px;	
 	margin-bottom: 75px;
+	width: 80%;
+	margin-left: 10%;
+	margin-left: 10%;
 }
 
 .searchbar {
@@ -184,7 +160,7 @@ Söktävling rules
   }
   /*CSS för sökbar*/
   #myInput {
-	background-image: src= "./images/searchicon.png"; /* Add a search icon to input */
+	background-image: url(./images/searchicon.png); /* Add a search icon to input */
 	background-position: 10px 12px; /* Position the search icon */
 	background-repeat: no-repeat; /* Do not repeat the icon image */
 	max-width: 100%; /* Full-width */
@@ -192,35 +168,65 @@ Söktävling rules
 	padding: 12px 20px 12px 40px; /* Add some padding */
 	border: 1px solid #ddd; /* Add a grey border */
 	margin-bottom: 12px; /* Add some space below the input */
-  }
-  /*CSS för tabellen*/
+  } 
+
+
+   /*CSS för tabeller*/
+   #tablecomp {
+	border-collapse: collapse;
+	border: 1px solid black;
+	width: 100%;
+   }
+   #tablecomp th {
+	border: 1px solid black;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	text-align: left;
+	padding: 5px;
+	font: bold 14px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;	  
+}
+
+	#tablecomp td {
+		border-right: 1px solid black;
+		border-left: 1px solid black;
+		border-bottom: 1px solid #C1DAD7;
+		padding: 6px 8px;
+	}
+	#tablecomp tr {
+		background: #FFF;
+		color: #000000;
+	}
+	#tablecomp tr.alt {
+		background: #F2E3C6;
+		color: #000000;
+	}
+
+
+   #table {
+	border-collapse: collapse;
+	border: 1px solid black;
+	width: 100%;
+   }
+
   #table th {
-	  border-bottom: 1px solid black;
+	  border: 1px solid black;
 	  letter-spacing: 2px;
 	  text-transform: uppercase;
 	  text-align: left;
 	  padding: 5px;
-	  font: bold 14px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
-	  border-left: none;
+	  font: bold 14px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;	  
   }
-  
+ 
   #table td {
 	  border-right: 1px solid black;
+	  border-left: 1px solid black;
 	  border-bottom: 1px solid #C1DAD7;
-	  padding: 6px 10px;
+	  padding: 6px 8px;
   }
   #table tr {
 	  background: #FFF;
 	  color: #000000;
   }
-  #table {
-	  border-collapse: collapse;
-	  width: 100%;
-	  padding: 0;
-	  margin: 0;
-	  border: 1px solid black;
-  }
-  
   #table tr.alt {
 	  background: #F2E3C6;
 	  color: #000000;
@@ -236,12 +242,13 @@ Program rules
 	padding-left: 10px;
 	padding-right: 10px;
 }
+
   .subbar {
-	color: #F2E3C6;
+	color: white;
+	width: 100%;
 	padding-top: 0.2em;
 	padding-bottom: 0.2em;
 	padding-left: 5px;
-	margin: 0 0 5px;
 	background-color: #487099;
 	overflow: hidden;
 }
@@ -293,47 +300,6 @@ Program rules
 
 }
 
-.t1r1 {color:#FFF;}
-.t1r2 {color:#FFF;}
-.t1r3 {color:#FFF;}
-.t2r1 {color:#FFF;}
-.t3r1 {color:#FFF;}
-
-#t1r1c1 {width:80px;}
-#t1r1c2 {width:80px;}
-#t1r1c3 {width:80px;}
-#t1r1c4 {width:80px;}
-#t1r1c5 {width:80px;}
-#t1r1c6 {width:80px;}
-#t1r1c7 {width:80px;}
-#t1r1c8 {width:80px;}
-#t1r1c9 {width:80px;}
-#t1r1c10 {width:80px;}
-
-#t2r1c1 {width:40px;}
-#t2r1c2 {width:40px;}
-#t2r1c3 {width:210px;}
-#t2r1c4 {width:40px;}
-#t2r1c5 {width:110px;}
-#t2r1c6 {width:70px;}
-#t2r1c7 {width:70px;}
-#t2r1c8 {width:70px;}
-#t2r1c9 {width:70px;}
-#t2r1c10 {width:70px;}
-#t2r1c11 {width:70px;}
-
-#t3r1c1 {width:64px;}
-#t3r1c2 {width:64px;}
-#t3r1c3 {width:64px;}
-#t3r1c4 {width:64px;}
-#t3r1c5 {width:64px;}
-#t3r1c6 {width:64px;}
-#t3r1c7 {width:64px;}
-#t3r1c8 {width:64px;}
-#t3r1c9 {width:64px;}
-#t3r1c10 {width:64px;}
-#t3r1c11 {width:64px;}
-
 .liveheader{
 	width:100%;
 	background-color:#D87228;
@@ -343,62 +309,6 @@ Program rules
 	background-repeat:no-repeat;
 	background-position:0px 0px;
 	padding-bottom:10px;
-	
-}
-.liveheader h1{
-	font-size:28px;
-	margin:0px;
-	padding:0px;
-	padding-left:20px;
-	padding-top:12px;
-	padding-bottom:3px;
-	padding-bottom:10px;
-	line-height: normal;
-	
-}
-.liveheader h2{
-	font-size:16px;
-	margin:0px;
-	padding:0px;
-	padding-left:35px;
-	color:#FFF;
-	padding-top:4px;
-	
-}
-.liveheader h3{
-	font-size:16px;
-	margin:0px;
-	padding:0px;
-	padding-left:35px;
-	color: #FFF;
-	padding-top:4px;
-	
-}
-.liveheader h4{
-	font-size:16px;
-	margin:0px;
-	padding:0px;
-	padding-left:35px;
-	color: #FFF;
-	padding-top:4px;
-	
-}
-.liveheader h5{
-	font-size:16px;
-	margin:0px;
-	padding:0px;
-	padding-left:35px;
-	color: #FFF;
-	padding-top:4px;
-	
-}
-.liveheader h6{
-	font-size:16px;
-	margin:0px;
-	padding:0px;
-	padding-left:35px;
-	color: #FFF;
-	padding-top:4px;
 	
 }
 
@@ -411,4 +321,29 @@ table {
 	font-size:12px;
 	color: black;
 	font-weight: bold;
+}
+/*Media Query för mobil enhet*/
+	@media screen and (max-width: 800px) {
+	.row, .navbar {   
+	  flex-direction: column;
+	  align-content: center;
 	}
+	.left, .main {
+		width: 100%;	
+	}
+	body {
+		width: 800px;	
+	}
+	.centeredcontent {
+		margin-left: 0;
+		margin-right: 0;
+		width: 100%;
+	}
+	#tablecomp{
+		max-width: 750px;
+	}
+	.navbar a {
+		font-size: 28px;
+		padding: 40px 20px;
+	}	
+}
