@@ -26,9 +26,6 @@ Global rules
 	bottom: 0;
 	position: fixed;
 }
-.logo {
-	clip: rect(0px,600px,130px,0px);
-}
   /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
   * {
 	box-sizing: border-box;
@@ -80,7 +77,7 @@ Menu rules
 	margin-bottom: 10px;
   }
   .combobox{
-	  width: 100%;
+	  max-width: 100%;
   }
 
   /*Navigerings menyn*/
@@ -132,6 +129,19 @@ Startpage rules
 Söktävling rules
 ======================================
 */
+ button {
+	background-color: skyblue;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	display: none;
+  }
+
+
 .centeredcontent {
 	background-color:wheat;
 	padding: 20px;	
@@ -200,37 +210,35 @@ Söktävling rules
 		background: #F2E3C6;
 		color: #000000;
 	}
-
-
    #table {
 	border-collapse: collapse;
 	border: 1px solid black;
 	width: 100%;
    }
 
-  #table th {
+   #table th {
 	  border: 1px solid black;
 	  letter-spacing: 2px;
 	  text-transform: uppercase;
 	  text-align: left;
 	  padding: 5px;
 	  font: bold 14px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;	  
-  }
+    }
  
   #table td {
 	  border-right: 1px solid black;
 	  border-left: 1px solid black;
 	  border-bottom: 1px solid #C1DAD7;
 	  padding: 6px 8px;
-  }
+    }
   #table tr {
 	  background: #FFF;
 	  color: #000000;
-  }
+    }
   #table tr.alt {
 	  background: #F2E3C6;
 	  color: #000000;
-  }
+    }
 /*
 ======================================
 Program rules
@@ -323,27 +331,25 @@ table {
 	font-weight: bold;
 }
 /*Media Query för mobil enhet*/
-	@media screen and (max-width: 800px) {
+	@media screen and (max-width: 1000px) {
 	.row, .navbar {   
 	  flex-direction: column;
-	  align-content: center;
+	  align-content: center;	  
+	  min-width: 800px;
 	}
 	.left, .main {
 		width: 100%;	
-	}
-	body {
-		width: 800px;	
 	}
 	.centeredcontent {
 		margin-left: 0;
 		margin-right: 0;
 		width: 100%;
 	}
-	#tablecomp{
-		max-width: 750px;
-	}
-	.navbar a {
-		font-size: 28px;
+	.navbar a {		
+		font-size: 24px;
 		padding: 40px 20px;
 	}	
+	button {
+		display: inline;
+	}
 }
