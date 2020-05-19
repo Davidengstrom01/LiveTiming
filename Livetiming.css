@@ -1,0 +1,355 @@
+/*
+======================================
+Global rules
+======================================
+*/
+  /* Style the body */
+  header{
+	  margin: 0;
+	  padding: 0;
+  }
+  body {
+	font-family: Arial;
+	background-color: skyblue;
+	padding: 0;
+	margin: 0;
+  }
+  /* Footer */
+ footer {
+	width: 100%;
+	height: 70px;
+	background-color: #58a0c3;
+	text-align: center;
+	border-top: 2px solid black;
+	margin-bottom: 0;
+	margin-top: auto;
+	bottom: 0;
+	position: fixed;
+}
+  /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+  * {
+	box-sizing: border-box;
+  }
+   /* Clear floats after the columns */
+   .row:after {
+	content: "";
+	display: table;
+	clear: both;
+  }
+  .row {  
+	background-color: skyblue;
+	display: flex;
+	flex-wrap: wrap;
+  }
+
+/* Create three unequal columns that floats next to each other */
+.column {
+	float: left;
+	padding: 10px;
+  }
+  
+  .left, .right {
+	width: 20%;
+  }
+  
+  .main {
+	width: 60%;
+	padding: 0;
+	margin: 0;
+	margin-bottom: 75px;
+  }
+/*
+======================================
+Menu rules
+======================================
+*/
+/*Tävlings menyn*/  /* Sidebar/left column */
+ 
+   .competionmenu {
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 20px;
+	background-color: #f1f1f1;
+	width: 90%;
+	height: 90%;
+	max-height: 150px;
+	margin-bottom: 10px;
+  }
+  .combobox{
+	  max-width: 100%;
+  }
+
+  /*Navigerings menyn*/
+  /* Style the top navigation bar */
+  .navbar {
+	display: flex;
+	background-color: #333;
+  }
+  
+  /* Style the navigation bar links */
+  .navbar a {
+	color: white;
+	padding: 20px 20px;
+	text-decoration: none;
+	text-align: center;
+  }
+  
+  /* Change color on hover */
+  .navbar a:hover {
+	background-color: #e6872a;
+	color: black;
+  }
+/*
+======================================
+Startpage rules
+======================================
+*/
+  /* Container holding the image and the text */
+.container {
+	position: relative;
+	text-align: center;
+}
+.centered {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: rgba(255, 255, 255, 0.7);
+}
+.centered p {
+	font-size: 16px;
+}
+.centered h2 {
+	font-size: 22px;
+}
+
+/*
+======================================
+Söktävling rules
+======================================
+*/
+ button {
+	background-color: skyblue;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	display: none;
+  }
+
+
+.centeredcontent {
+	background-color:wheat;
+	padding: 20px;	
+	margin-bottom: 75px;
+	width: 80%;
+	margin-left: 10%;
+	margin-left: 10%;
+}
+
+.searchbar {
+	align-content: center;
+	padding: 20px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.soktavling {
+	padding: 20px;
+	background-color: white;
+}
+
+.infocontent {
+	width: auto;
+	top: 0px;
+	background-color: white;
+  }
+  /*CSS för sökbar*/
+  #myInput {
+	background-image: url(./images/searchicon.png); /* Add a search icon to input */
+	background-position: 10px 12px; /* Position the search icon */
+	background-repeat: no-repeat; /* Do not repeat the icon image */
+	max-width: 100%; /* Full-width */
+	font-size: 16px; /* Increase font-size */
+	padding: 12px 20px 12px 40px; /* Add some padding */
+	border: 1px solid #ddd; /* Add a grey border */
+	margin-bottom: 12px; /* Add some space below the input */
+  } 
+
+
+   /*CSS för tabeller*/
+   #tablecomp {
+	border-collapse: collapse;
+	border: 1px solid black;
+	width: 100%;
+   }
+   #tablecomp th {
+	border: 1px solid black;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	text-align: left;
+	padding: 5px;
+	font: bold 14px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;	  
+}
+
+	#tablecomp td {
+		border-right: 1px solid black;
+		border-left: 1px solid black;
+		border-bottom: 1px solid #C1DAD7;
+		padding: 6px 8px;
+	}
+	#tablecomp tr {
+		background: #FFF;
+		color: #000000;
+	}
+	#tablecomp tr.alt {
+		background: #F2E3C6;
+		color: #000000;
+	}
+   #table {
+	border-collapse: collapse;
+	border: 1px solid black;
+	width: 100%;
+   }
+
+   #table th {
+	  border: 1px solid black;
+	  letter-spacing: 2px;
+	  text-transform: uppercase;
+	  text-align: left;
+	  padding: 5px;
+	  font: bold 14px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;	  
+    }
+ 
+  #table td {
+	  border-right: 1px solid black;
+	  border-left: 1px solid black;
+	  border-bottom: 1px solid #C1DAD7;
+	  padding: 6px 8px;
+    }
+  #table tr {
+	  background: #FFF;
+	  color: #000000;
+    }
+  #table tr.alt {
+	  background: #F2E3C6;
+	  color: #000000;
+    }
+/*
+======================================
+Program rules
+======================================
+*/
+.center {
+	background-color: white;
+	padding-top: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+  .subbar {
+	color: white;
+	width: 100%;
+	padding-top: 0.2em;
+	padding-bottom: 0.2em;
+	padding-left: 5px;
+	background-color: #487099;
+	overflow: hidden;
+}
+.subbar ul {
+	list-style-type: none;
+}
+.subbar li {
+	margin: 0;
+	float: left;
+	padding-top: 1px;
+	padding-right: 5px;
+	padding-bottom: 1px;
+	padding-left: 7px;
+}
+.subbar li.active {
+	font-weight: bold;
+	text-decoration: underline;
+}
+.subbar li a {
+	font-weight: bold;
+	color: #FFF;
+	text-decoration: none;
+}
+.subbar li a:hover {
+	text-decoration: underline;
+}
+/*
+======================================
+ Live rules
+======================================
+*/
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding: 20px;
+	align-self: center;
+  }
+  .videoWrapper iframe {
+	  align-self: center;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+  }
+.centerlive {
+	
+	padding: 30px;
+	background-color: #2980b9;
+
+}
+
+.liveheader{
+	width:100%;
+	background-color:#D87228;
+	color:#FFF;
+	font-family:Verdana, Geneva, sans-serif;
+	background-image:url("corner.gif");
+	background-repeat:no-repeat;
+	background-position:0px 0px;
+	padding-bottom:10px;
+	
+}
+
+table {
+	border-bottom-style:solid;
+	border:thin;
+	border-color:#CCC;
+	border-width:1px;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:12px;
+	color: black;
+	font-weight: bold;
+}
+/*Media Query för mobil enhet*/
+	@media screen and (max-width: 1000px) {
+	.row, .navbar {   
+	  flex-direction: column;
+	  align-content: center;	  
+	  min-width: 800px;
+	}
+	.left, .main {
+		width: 100%;	
+	}
+	.centeredcontent {
+		margin-left: 0;
+		margin-right: 0;
+		width: 100%;
+	}
+	.navbar a {		
+		font-size: 24px;
+		padding: 40px 20px;
+	}	
+	button {
+		display: inline;
+	}
+}
