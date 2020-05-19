@@ -129,15 +129,16 @@ Startpage rules
 Söktävling rules
 ======================================
 */
- button {
+.button {
 	background-color: skyblue;
 	border: none;
 	color: white;
 	padding: 15px 32px;
 	text-align: center;
 	text-decoration: none;
-	display: inline-block;
 	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
 	display: none;
   }
 
@@ -335,7 +336,10 @@ table {
 	.row, .navbar {   
 	  flex-direction: column;
 	  align-content: center;	  
-	  min-width: 800px;
+	  min-width: 1000px;
+	}
+	body{
+		min-width: 1000px;
 	}
 	.left, .main {
 		width: 100%;	
@@ -349,7 +353,7 @@ table {
 		font-size: 24px;
 		padding: 40px 20px;
 	}	
-	button {
-		display: inline;
+	.button{
+		display: inline-block;
 	}
 }
