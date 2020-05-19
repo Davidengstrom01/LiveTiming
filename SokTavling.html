@@ -9,6 +9,7 @@
 </head>
 <body>	
   <header>
+    <div class = "wrapper">
       <!-- Logotyp -->
     <a href="index.html"><img class="logo" src="./images/livetiming_banner.finalpng.png"/></a>
     <!-- Navigation Bar -->
@@ -23,8 +24,9 @@
       <!-- Tävlings menu -->
       <div class = "centeredcontent">
               <h1>Sök tävling</h1>
+              <button type="button" onclick="alert('Använd mobilen liggandes för bättre erfarenhet')">Tips</button>
               <p>Nedan visas alla tävlingar som finns upplagda här. Klicka på tävlingsnamnet för att gå till denna tävling, eller gå direkt till program eller resultat genom att klicka på dessa.</p>
-              <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Sök efter tävling">
+              <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Sök efter tävling">              
                 <table id="tablecomp" cellspacing="0">
                   <tbody>
                     <tr>
@@ -34054,6 +34056,7 @@
       <p><a href="http://www.livetiming.se/extern.php?type=1&lang=1">RSS Feed</a> | <a href="https://support.iccmediasport.com/new-ticket">Kontakt </a>| <a href="https://www.livetiming.se/includes/Integritetspolicy ICCMS.pdf">Integritetspolicy</a><br />
       &copy; Copyright 2013 IC Control Media & Sport</p>
   </footer>
+</div>
 
   <script>
     function myFunction() {
